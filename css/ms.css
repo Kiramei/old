@@ -1,0 +1,11 @@
+body{
+  color: red;
+  font-size: 30px;
+  font-family: cursive;
+  text-align:center;
+
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
