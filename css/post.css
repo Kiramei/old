@@ -1,0 +1,53 @@
+.hamburger {
+    position: fixed;
+		top: 50%;
+		left: 45%;
+    z-index: 1000;
+    top: 0;
+    width: 6rem;
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 0rem;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+    border: 0;
+    outline: 0;
+    background-color: #ffc1dd;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    margin-top: 20%;
+    margin-right: 2%;
+}
+.header{
+    display:inline-block;
+    position:relative;
+}
+.header:hover .downbtn{
+    display:block;
+}
+.hamburger:hover{
+    background-color: #ffdeff;
+}
+.header span{
+    cursor:pointer;
+    color: white;
+}
+.header .downbtn{
+    display:none;
+    position:absolute;
+    min-width: 160px;
+}
+.header .downbtn li{
+  padding-top: 20px;
+    line-height:10px;
+    text-align:left;
+}
+.header .downbtn a:hover{
+    color:#20c1ee;
+}
+.header .downbtn a{
+    display:block;
+    color:black;
+    width:100%;
+}
