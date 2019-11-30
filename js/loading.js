@@ -1,5 +1,3 @@
-// JavaScript Document
-
 $('head').append(
 	'<style type="text/css">#container { display: none; } #fade, #loader { display: block; }</style>'
 );

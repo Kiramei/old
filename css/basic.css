@@ -11,12 +11,16 @@ min-height: 100%;
 height: auto;
 height: 100%;
 }
-
+.full{
+	width: 100%;
+	height: 100%;
+}
 .clear{clear:both;}
 
 image{border:0px;}
 a {outline: none;}
 em{visibility: hidden;}
+
 #loader {
 	width: 20%;
 	display: none;
@@ -62,12 +66,11 @@ em{visibility: hidden;}
 	z-index: 998;
 }
 .top_bg{
-	background-position: left center;
+	background-position:center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
 	-moz-background-size:cover;
-	-webkit-background-size:cover;
+
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	width:100%;
@@ -81,8 +84,33 @@ em{visibility: hidden;}
 	  transition: all 1s;
 	  opacity: 1;
 }
-
-
+.top_logo {
+	width: 30%;
+	position:fixed;
+	top:0.5%;
+	right:32%;
+	z-index:20;
+	min-width:300px;
+	opacity:0;
+}
+.menu{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	opacity: 0;
+	top: 30%
+}
+.menu_box{
+	width: 1080px;
+	height: 25px;
+}
+.border{
+	width: 6px;
+	height: 30px;
+	float: left;
+padding-left: 6px;
+padding-right: 6px;
+}
 #font{
 	color: white;
 }

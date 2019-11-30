@@ -1370,15 +1370,6 @@ animation: fadeIn 5s;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-#loader {
-	width: 20%;
-	position: fixed;
-	_position: absolute; /* IE6蟇ｾ遲� */
-	top: 50%;
-	left: 40%;
-	margin-top: -136px; /* height縺ｮ蜊雁�縺ｮ繝槭う繝翫せ蛟､ */
-	z-index: -1;
-}
 #blank{
   z-index: 1;
 }
