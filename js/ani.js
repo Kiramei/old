@@ -14,6 +14,6 @@ anime({
   delay:900,
   duration:2000,
   easing:'easeInOutQuad',
-
 });
+
 });
