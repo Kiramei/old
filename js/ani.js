@@ -10,7 +10,7 @@ anime({
 });
 anime({
   targets:'.menu',
-  opacity:1,
+  opacity:0.75,
   delay:900,
   duration:2000,
   easing:'easeInOutQuad',
