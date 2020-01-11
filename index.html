@@ -3,21 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="&copy;Kiramei">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=0.5,minimum-scale=2.0,user-scalable=no"/>
     <title>Kiramei</title>
     <link rel="stylesheet" href="css/basic.css" media="all">
-        <link rel="stylesheet" href="css/loads.css"/>
-        <link rel="stylesheet" href="css/post.css">
+        <link rel="stylesheet" href="css/sakura.css" media="all">
         <script  src="js/jquery.js"></script>
         <script src="js/loading.js"></script>
         <script src="js/anim.js" type="text/javascript"></script>
         <script src="js/ani.js"></script>
         <script src="js/p.js"></script>
         <script src="js/operation.js"></script>
-        <script type="text/javascript">
-          $("document").ready(function(){
-
-});
-        </script>
+        <script src="js/jquery.parallax.js"></script>
   </head>
   <body>
     <section class="full">
@@ -43,74 +39,132 @@
   </div>
   </div>
 -->
-<div class="background">
-  <img src="img/4.png" draggable="false"/>
-</div>
-    <div class="top_logo">
-        <img src="img/2A3G43B4F2D32G.png" draggable="false">
+    <div class="snow-container">
       </div>
+<div id="scene" data-isscale="true">
+<div class="background" >
+    <div class="layer" data-depth="0.4">
+    <img src="img/4.png" draggable="false"/>
+    </div>
+  </div>
+</div>
+<div id="por" data-isym="true">
+  <div class="top_logo">
+    <div class="layer"data-depth="0.2">
+            <img src="img/2A3G43B4F2D32G.png" draggable="false">
+    </div>
+    </div>
+</div>
+
       <!--Menu section-->
-    <div class="menu">
-      <div class="menu_box">
-        <div class="menu_border" style="margin-left:100px">
-            <img src="img/border.png" draggable="false">
+    <div class="menu" id="ost">
+<div class="layer"data-depth="0.13">
+        <div class="menu_border" id="fir">
+          <img src="img/border.png" draggable="false"/>
+          </div>
         </div>
+        <div class="layer"data-depth="0.1">
         <div class="menu_section">
           <a href="index.html">
-              <div class="protext" style="margin-left:10px">
-                Top
+              <div class="protext" style="margin-left:380%">
+                    Top
               </div>
           </a>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-        <div class="menu_section">
-              <div class="protext" style="margin-left:-5px">
-                Music
-              </div>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-        <div class="menu_section">
-              <div class="protext" style="margin-left:-5px">
-                Movie
-              </div>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-        <div class="menu_section">
-              <div class="protext" style="margin-left:-5px">
-                Album
-              </div>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-        <div class="menu_section">
-              <div class="protext" style="margin-left:-5px">
-                Event
-              </div>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-        <div class="menu_section">
-              <div class="protext" style="margin-left:2px" onclick="closed()">
-                Quit
-              </div>
-        </div>
-        <div class="menu_border">
-            <img src="img/border.png" draggable="false">
-        </div>
-      </div>
-    </div>
 
+        </div>
+              </div>
+              <div class="layer" data-depth="0.09">
+                <div class="menu_border" id="sec">
+                    <img src="img/border.png" draggable="false">
+                </div>
+              </div>
+              <div class="layer" data-depth="0.07">
+                <div class="menu_section">
+                  <a href="#">
+                    <div class="protext" onclick="showMusicPanel()">
+                      Music
+                    </div>
+                  </a>
+                </div>
+            </div>
+<div class="layer" data-depth="0.05">
+  <div class="menu_border" id="thr">
+      <img src="img/border.png" draggable="false">
   </div>
-
+</div>
+<div class="layer" data-depth="0.03">
+  <div class="menu_section">
+        <div class="protext">
+          Movie
+        </div>
+  </div>
+</div>
+<div class="layer" data-depth="0">
+  <div class="menu_border" id="for">
+      <img src="img/border.png" draggable="false">
+  </div>
+</div>
+<div class="layer" data-depth="-0.03">
+  <div class="menu_section">
+        <div class="protext">
+          Album
+        </div>
+  </div>
+</div>
+<div class="layer" data-depth="-0.05">
+  <div class="menu_border" id="fif">
+      <img src="img/border.png" draggable="false">
+  </div>
+</div>
+<div class="layer" data-depth="-0.07">
+  <div class="menu_section">
+        <div class="protext">
+          Event
+        </div>
+  </div>
+</div>
+<div class="layer" data-depth="-0.09">
+  <div class="menu_border" id="six">
+      <img src="img/border.png" draggable="false">
+  </div>
+</div>
+<div class="layer" data-depth="-0.1">
+  <div class="menu_section">
+        <div class="protext" onclick="closed()">
+          Quit
+        </div>
+  </div>
+</div>
+<div class="layer" data-depth="-0.13">
+  <div class="menu_border" id="sev">
+      <img src="img/border.png" draggable="false">
+  </div>
+</div>
+      </div>
+<div class="musicPanel">
+        <a href="#">
+          <div class="music_section" onclick="listen1()">
+            <div class="fp" id="yami">
+            闇の世界で光を探す
+            </div>
+          </div>
+        </a>
+          <a href="#">
+            <div class="music_section">
+              <div class="fp">
+              ツズケル...
+              </div>
+            </div>
+          </a>
+        <a href="#">
+          <div class="music_section">
+            <div class="fp">
+            ツズケル...
+            </div>
+          </div>
+        </a>
+      </div>
+</div>
     </section>
-
   </body>
 </html>
