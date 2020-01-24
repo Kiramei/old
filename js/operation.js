@@ -223,7 +223,7 @@ function listen2() {
 function listen3() {
     if (s == 0) {
         $("#hoshi").text("| 星空を見上げ |");
-        voicePlay2();
+        voicePlay3();
         s = 3
     } else {
         if (s == 1||s == 2) {
