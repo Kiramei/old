@@ -168,6 +168,15 @@ function voicePlay2() {
     });
     audio.play()
 }
+function voicePlay3() {
+    audio = "https://kiramei.github.io/pages/source/hoshi.wav";
+    audio = new Audio(audio);
+    $(audio).unbind("ended").bind("ended",
+    function() {
+        audio.play()
+    });
+    audio.play()
+}
 function voiceClose() {
     audio.pause()
 }
@@ -177,8 +186,9 @@ function listen1() {
         voicePlay1();
         s = 1
     } else {
-        if (s == 2) {
+        if (s == 2||s == 3) {
             $("#atsui").text("暑い日々");
+            $("#hoshi").text("星空を見上げ");
             $("#yami").text("| 闇の世界で光を探す |");
             voiceClose();
             voicePlay1();
@@ -196,12 +206,33 @@ function listen2() {
         voicePlay2();
         s = 2
     } else {
-        if (s == 1) {
+        if (s == 1||s == 3) {
             $("#yami").text("闇の世界で光を探す");
+            $("#hoshi").text("星空を見上げ");
             $("#atsui").text("| 暑い日々 |");
             voiceClose();
             voicePlay2();
             s = 2
+        } else {
+            $("#atsui").text("暑い日々");
+            voiceClose();
+            s = 0
+        }
+    }
+};
+function listen3() {
+    if (s == 0) {
+        $("#hoshi").text("| 星空を見上げ |");
+        voicePlay2();
+        s = 3
+    } else {
+        if (s == 1||s == 2) {
+            $("#yami").text("闇の世界で光を探す");
+            $("#atsui").text("暑い日々");
+            $("#hoshi").text("| 星空を見上げ |");
+            voiceClose();
+            voicePlay3();
+            s = 3
         } else {
             $("#atsui").text("暑い日々");
             voiceClose();
