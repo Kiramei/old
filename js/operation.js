@@ -143,7 +143,7 @@ function closeit3() {
 var audio;
 var s = 0;
 function voicePlay1() {
-    audio = "http://kirameki.tx115.5644.pw/source/yami.wav";
+    audio = "https://kiramei.github.io/pages/source/yami.wav";
     audio = new Audio(audio);
     $(audio).unbind("ended").bind("ended",
     function() {
@@ -152,7 +152,7 @@ function voicePlay1() {
     audio.play()
 }
 function voicePlay2() {
-    audio = "http://kirameki.tx115.5644.pw/source/atsui.wav";
+    audio = "https://kiramei.github.io/pages/source/atsui.wav";
     audio = new Audio(audio);
     $(audio).unbind("ended").bind("ended",
     function() {
