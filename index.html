@@ -1,170 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="&copy;Kiramei">
+    <meta name="keywords" content="Kiramei,kiramei">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=0.5,minimum-scale=2.0,user-scalable=no"/>
-    <title>Kiramei</title>
+    <meta name="robots" content="index,follow">
+    <title>Kiramei ~The eternal light~</title>
     <link rel="stylesheet" href="css/basic.css" media="all">
-        <link rel="stylesheet" href="css/sakura.css" media="all">
-        <script  src="js/jquery.js"></script>
-        <script src="js/loading.js"></script>
-        <script src="js/anim.js" type="text/javascript"></script>
-        <script src="js/ani.js"></script>
-        <script src="js/p.js"></script>
-        <script src="js/operation.js"></script>
-        <script src="js/jquery.parallax.js"></script>
+    <link rel="stylesheet" href="css/sakura.css" media="all">
+    <link rel="stylesheet" href="css/slick.css" media="all">
+    <script  src="js/jquery.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/anim.js" type="text/javascript"></script>
+    <script src="js/operation.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/slick.js"></script>
   </head>
   <body>
     <section class="full">
-      <div id="loader">
-        <img src="img/logo.png" width="77%" draggable="false">
-      </div>
-      <div id="fade">
-      </div>
-  <div class="top_bg"><!--
-  <div type="button" class="hamburger">
-  <div class="header">
-    <span>download</span>
-    <div class="downbtn">
-      <ul> oncontextmenu=self.event.returnValue=false
-        <li><a href="http://kirameki.tx115.5644.pw/source/kaze1.ppt">地理资料1</a></li>
-        <li><a href="http://kirameki.tx115.5644.pw/source/kaze2.ppt">地理资料2</a></li>
-        <li><a href="http://kirameki.tx115.5644.pw/source/class 9.ppt">历史资料1</a></li>
-        <li><a href="http://kirameki.tx115.5644.pw/source/history-review.pptx">历史复习</a></li>
-      </ul>
-
-    </div>
-
-  </div>
-  </div>
--->
-    <div class="snow-container">
-      </div>
-<div id="scene" data-isscale="true">
-<div class="background" >
-    <div class="layer" data-depth="0.4">
-    <img src="img/4.png" draggable="false"/>
-    </div>
-  </div>
-</div>
-<div id="por" data-isym="true">
-  <div class="top_logo">
-    <div class="layer"data-depth="0.2">
-            <img src="img/2A3G43B4F2D32G.png" draggable="false">
-    </div>
-    </div>
-</div>
-
-      <!--Menu section-->
-    <div class="menu" id="ost">
-<div class="layer"data-depth="0.13">
-        <div class="menu_border" id="fir">
-          <img src="img/border.png" draggable="false"/>
+      <!-- loader -->
+      <div id="loader"><img src="img/logo.png" width="77%" draggable="false"></div>
+      <div id="fade"></div>
+      <!-- Main Panel -->
+      <div class="main">
+        <div class="snow-container"></div>
+        <div id="scene" data-isscale="true"><div class="background" ><div class="layer" data-depth="0.4"><img src="img/4.png" draggable="false"/></div></div></div>
+        <div id="por" data-isym="true"><div class="top_logo"><div class="layer"data-depth="0.2"><img src="img/2A3G43B4F2D32G.png" draggable="false"></div></div></div>
+        <!--Menu section-->
+        <div class="menu" id="ost">
+          <div class="layer"data-depth="0.13"><div class="menu_border" id="fir"><img src="img/border.png" draggable="false"/></div></div>
+          <div class="layer"data-depth="0.1"><div class="menu_section"><a href="index.html"><div class="protext" style="margin-left:380%">Top</div></a></div></div>
+          <div class="layer" data-depth="0.09"><div class="menu_border" id="sec"><img src="img/border.png" draggable="false"></div></div>
+          <div class="layer" data-depth="0.07"><div class="menu_section"><a href="#"><div class="protext" onclick="showMusicPanel()">Music</div></a></div></div>
+          <div class="layer" data-depth="0.05"><div class="menu_border" id="thr"><img src="img/border.png" draggable="false"></div></div>
+          <div class="layer" data-depth="0.03"><div class="menu_section"><div class="protext">Movie</div></div></div>
+          <div class="layer" data-depth="0"><div class="menu_border" id="for"><img src="img/border.png" draggable="false"></div></div>
+          <div class="layer" data-depth="-0.03"><div class="menu_section"><a href="#"><div class="protext" onclick="showAlbum()">Album</div></a></div></div>
+          <div class="layer" data-depth="-0.05"><div class="menu_border" id="fif"><img src="img/border.png" draggable="false"></div></div>
+          <div class="layer" data-depth="-0.07"><div class="menu_section"><a href="#"><div class="protext" onclick="showEvent()">Event</div></a></div></div>
+          <div class="layer" data-depth="-0.09"><div class="menu_border" id="six"><img src="img/border.png" draggable="false"></div></div>
+          <div class="layer" data-depth="-0.1"><div class="menu_section"><div class="protext" onclick="closed()">Quit</div></div></div>
+          <div class="layer" data-depth="-0.13"><div class="menu_border" id="sev"><img src="img/border.png" draggable="false"></div></div>
+        </div>
+        <!-- Music section -->
+        <div class="music">
+          <a href="#"><div class="mae"><div class="fo"><</div></div></a>
+          <div class="musicPanel">
+            <a href="#"><div class="music_section" onclick="listen1()"><div class="fp" id="yami">闇の世界で光を探す</div></div></a>
+            <a href="#"><div class="music_section" onclick="listen2()"><div class="fp" id="atsui">暑い日々</div></div></a>
+            <a href="#"><div class="music_section"><div class="fp">ツズケル...</div></div></a>
           </div>
+          <a href="#"><div class="ado"><div class="fo">></div></div></a>
         </div>
-        <div class="layer"data-depth="0.1">
-        <div class="menu_section">
-          <a href="index.html">
-              <div class="protext" style="margin-left:380%">
-                    Top
-              </div>
-          </a>
-
+        <!-- Album section -->
+        <div class="albox">
+          <div class="albumPanel">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+          </div>
+          <div class="albumPanel_nav">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
+          </div>
+          <a href="#"><div class="button" onclick="back()">←&nbsp;&nbsp;&nbsp;&nbsp;Back</div></a>
         </div>
-              </div>
-              <div class="layer" data-depth="0.09">
-                <div class="menu_border" id="sec">
-                    <img src="img/border.png" draggable="false">
-                </div>
-              </div>
-              <div class="layer" data-depth="0.07">
-                <div class="menu_section">
-                  <a href="#">
-                    <div class="protext" onclick="showMusicPanel()">
-                      Music
-                    </div>
-                  </a>
-                </div>
-            </div>
-<div class="layer" data-depth="0.05">
-  <div class="menu_border" id="thr">
-      <img src="img/border.png" draggable="false">
-  </div>
-</div>
-<div class="layer" data-depth="0.03">
-  <div class="menu_section">
-        <div class="protext">
-          Movie
-        </div>
-  </div>
-</div>
-<div class="layer" data-depth="0">
-  <div class="menu_border" id="for">
-      <img src="img/border.png" draggable="false">
-  </div>
-</div>
-<div class="layer" data-depth="-0.03">
-  <div class="menu_section">
-        <div class="protext">
-          Album
-        </div>
-  </div>
-</div>
-<div class="layer" data-depth="-0.05">
-  <div class="menu_border" id="fif">
-      <img src="img/border.png" draggable="false">
-  </div>
-</div>
-<div class="layer" data-depth="-0.07">
-  <div class="menu_section">
-        <div class="protext">
+        <!-- Event section -->
+        <div class="event_ue">
+          <div class="ef">
           Event
+          </div>
         </div>
-  </div>
-</div>
-<div class="layer" data-depth="-0.09">
-  <div class="menu_border" id="six">
-      <img src="img/border.png" draggable="false">
-  </div>
-</div>
-<div class="layer" data-depth="-0.1">
-  <div class="menu_section">
-        <div class="protext" onclick="closed()">
-          Quit
-        </div>
-  </div>
-</div>
-<div class="layer" data-depth="-0.13">
-  <div class="menu_border" id="sev">
-      <img src="img/border.png" draggable="false">
-  </div>
-</div>
-      </div>
-<div class="musicPanel">
-        <a href="#">
-          <div class="music_section" onclick="listen1()">
-            <div class="fp" id="yami">
-            闇の世界で光を探す
+        <div class="event_box">
+          <div class="event event-p">
+            <div class="scrollbar"></div>
+            <div class="event_psg">
+              <div class="event_title">
+                ファイルアップロード
+              </div>
+              地理資料一つ、<a href="http://kirameki.tx115.5644.pw/source/kaze1.ppt">ここをクリックしてダウンロードします</a>
+              <div class="event_date">
+                配信時間：2020/1/23
+              </div>
+            </div>
+            <div class="event_psg">
+              <div class="event_title">
+                ファイルアップロード
+              </div>
+              地理資料一つ、<a href="http://kirameki.tx115.5644.pw/source/kaze2.ppt">ここをクリックしてダウンロードします</a>
+              <div class="event_date">
+                配信時間：2020/1/23
+              </div>
+            </div>
+            <div class="event_psg">
+              <div class="event_title">
+                ファイルアップロード
+              </div>
+              歷史資料一つ、<a href="http://kirameki.tx115.5644.pw/source/class%209.ppt">ここをクリックしてダウンロードします</a>
+              <div class="event_date">
+                配信時間：2020/1/23
+              </div>
+            </div>
+            <div class="event_psg">
+              <div class="event_title">
+                ファイルアップロード
+              </div>
+              歷史復習資料一つ、<a href="http://kirameki.tx115.5644.pw/source/kaze2.ppt">ここをクリックしてダウンロードします</a>
+              <div class="event_date">
+                配信時間：2020/1/23
+              </div>
+            </div>
             </div>
           </div>
-        </a>
-          <a href="#">
-            <div class="music_section">
-              <div class="fp">
-              ツズケル...
+        <a href="#">
+            <div class="event_shita" onclick="eback()">
+              <div class="ff">
+                Back
               </div>
             </div>
           </a>
-        <a href="#">
-          <div class="music_section">
-            <div class="fp">
-            ツズケル...
-            </div>
-          </div>
-        </a>
       </div>
-</div>
     </section>
   </body>
 </html>
