@@ -234,7 +234,7 @@ function listen3() {
             voicePlay3();
             s = 3
         } else {
-            $("#atsui").text("暑い日々");
+            $("#hoshi").text("星空を見上げ");
             voiceClose();
             s = 0
         }
