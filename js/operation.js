@@ -52,12 +52,15 @@ function showMusicPanel() {
 }
 function showAlbum() {
   $(".albumPanel").css("pointer-events", "auto");
+  $(".albumPanel_nav").css("pointer-events", "auto");
+  $(".button").css("pointer-events", "auto");
     anime({
         targets: [".musicPanel", ".mae", ".ado"],
         opacity: 0,
         duration: 800,
         easing: "easeInOutQuad",
     });
+    $(".menu").css("pointer-events", "none");
     $(".music").css("pointer-events", "none");
     $(".mae").css("pointer-events", "none");
     $(".ado").css("pointer-events", "none");
@@ -80,6 +83,7 @@ function showEvent() {
         duration: 800,
         easing: "easeInOutQuad",
     });
+    $(".menu").css("pointer-events", "none");
     $(".music").css("pointer-events", "none");
     $(".mae").css("pointer-events", "none");
     $(".ado").css("pointer-events", "none");
@@ -94,16 +98,17 @@ function showEvent() {
     p = 3;
 }
 function back() {
+    $(".button").css("pointer-events", "none");
     anime({
         targets: ".albox",
         opacity: 0,
         duration: 800,
         easing: "easeInOutQuad",
     });
-    $(".menu").css("display", "block");
+    $(".menu").css("pointer-events", "auto");
     anime({
         targets: ".menu",
-        opacity: 1,
+        opacity: 0.68,
         duration: 800,
         delay: 800,
         easing: "easeInOutQuad",
@@ -117,8 +122,8 @@ function eback() {
         duration: 800,
         easing: "easeInOutQuad",
     });
-    $(".menu").css("display", "block");
-    anime({
+    $(".menu").css("pointer-events", "auto");
+        anime({
         targets: ".menu",
         opacity: 0.68,
         duration: 800,
@@ -136,7 +141,6 @@ function go3() {
         duration: 800,
         easing: "easeInOutQuad",
     });
-    setTimeout("closeit3()", 800)
 }
 function closeit() {
     $(".musicPanel").css("display", "none")

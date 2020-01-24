@@ -207,10 +207,12 @@ em {
 }
 
 .albox {
+	pointer-events: none;
 	opacity: 0;
 }
 
 .button {
+	pointer-events: none;
 	color: #f1b;
 	font-size: 25px;
 	background-color: #eee;
@@ -330,6 +332,7 @@ em {
 }
 
 .event_box {
+	pointer-events: none;
 	position: absolute;
 	width: 50%;
 	height: 40%;
@@ -377,6 +380,7 @@ em {
 }
 
 .event_shita {
+	pointer-events: none;
 	position: absolute;
 	width: 20%;
 	height: 8%;
