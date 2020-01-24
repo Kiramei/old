@@ -58,7 +58,9 @@ function showAlbum() {
         duration: 800,
         easing: "easeInOutQuad",
     });
-    setTimeout("closeit()", 800);
+    $(".music").css("pointer-events", "none");
+    $(".mae").css("pointer-events", "none");
+    $(".ado").css("pointer-events", "none");
     anime({
         targets: ".albox",
         opacity: 0.8,
@@ -78,7 +80,9 @@ function showEvent() {
         duration: 800,
         easing: "easeInOutQuad",
     });
-    setTimeout("closeit()", 800);
+    $(".music").css("pointer-events", "none");
+    $(".mae").css("pointer-events", "none");
+    $(".ado").css("pointer-events", "none");
     anime({
         targets: [".event_box", ".event_ue", ".event_shita"],
         opacity: 0.8,
