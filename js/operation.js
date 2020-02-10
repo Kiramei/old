@@ -71,6 +71,12 @@ function showAlbum() {
         delay: 800,
         easing: "easeInOutQuad",
     });
+    anime({
+        targets: ".background_b",
+        opacity: 1,
+        duration: 400,
+        easing: "easeInOutQuad",
+    });
     go3();
     p = 2;
 }
@@ -94,13 +100,22 @@ function showEvent() {
         delay: 800,
         easing: "easeInOutQuad",
     });
+    anime({
+        targets: [".background_b"],
+        opacity: 1,
+        duration: 400,
+        easing: "easeInOutQuad",
+    });
+    setTimeout((function(){
+      $('.event_shita').css("transition","0.3s ease");
+    }),1600);
     go3();
     p = 3;
 }
 function back() {
     $(".button").css("pointer-events", "none");
     anime({
-        targets: ".albox",
+        targets: [".albox",".background_b"],
         opacity: 0,
         duration: 800,
         easing: "easeInOutQuad",
@@ -116,8 +131,9 @@ function back() {
     p = 0
 }
 function eback() {
+        $('.event_shita').css("transition","0s");
     anime({
-        targets: [".event_box", ".event_ue", ".event_shita"],
+        targets: [".event_box", ".event_ue", ".event_shita",".background_b"],
         opacity: 0,
         duration: 800,
         easing: "easeInOutQuad",

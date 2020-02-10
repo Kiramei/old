@@ -89,9 +89,24 @@ em {
 	margin: auto;
 	width: 100%;
 	text-align: center;
+	z-index: 2;
 	transform-origin: center
 }
 .background img {
+	transform: scale(1.05);
+	-webkit-animation: bog 3s
+}
+.background_b{
+	opacity: 0;
+	transition: 3s;
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	z-index: 3;
+	transform-origin: center
+}
+.background_b img {
 	transform: scale(1.05);
 	-webkit-animation: bog 3s
 }
@@ -130,7 +145,6 @@ em {
 .top_logo img {
 	margin: auto
 }
-
 .menu {
 	position: fixed;
 	width: 100%;
@@ -152,6 +166,7 @@ em {
 }
 
 .menu_section {
+	pointer-events: none;
 	z-index: 100;
 	width: 100px;
 	float: left;
@@ -159,6 +174,7 @@ em {
 }
 
 .protext {
+	transition: 0.3s ease;
 	text-shadow: 0 0 10px #fff;
 	color: #f6f
 }
@@ -212,6 +228,7 @@ em {
 }
 
 .button {
+	transition: 0.3s;
 	pointer-events: none;
 	color: #f1b;
 	font-size: 25px;
@@ -222,6 +239,7 @@ em {
 }
 
 .button:hover {
+	color: #88f;
 	background-color: #fff;
 }
 
@@ -250,6 +268,7 @@ em {
 	background-color: #fff
 }
 .music_section {
+	transition: 0.3s ease;
 	margin-bottom: 5.56%;
 	width: 95%;
 	height: 30%;
